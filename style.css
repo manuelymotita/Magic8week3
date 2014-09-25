@@ -1,0 +1,54 @@
+html {
+	text-align: center;
+}
+
+
+#eight-ball {
+    width:500px;
+    margin: 0 auto;
+    text-align: center;
+    }
+    
+.button {
+	position:relative;
+	font-family: helvetica;
+	font-weight: 100;
+	font-size:14pt;
+	color: #FFF;
+	text-decoration: none;
+	background: none;
+	/*padding: 0 0 0 0;*/
+	margin: 0 auto;
+	border: 0 none;
+	
+	}
+	
+img.button{
+	
+	position: relative;
+	top: 91px;
+	z-index: -1;
+	
+	}
+	
+p {
+	position:relative;
+	top: 100px;
+	font-family: helvetica;
+	color: #fff;
+	font-size: 15pt;
+	font-weight: 100;
+	}
+	
+img.answer{
+	
+	position:fixed;
+	top:250px;
+	left: auto;
+	right: auto;
+	margin-left: -150px;
+	width: 300px;
+	height: auto;
+	z-index: -1;
+	
+	}

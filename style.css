@@ -4,7 +4,7 @@ html {
 
 
 #eight-ball {
-    width:500px;
+    width:100%;
     margin: 0 auto;
     text-align: center;
     }
@@ -51,4 +51,15 @@ img.answer{
 	height: auto;
 	z-index: -1;
 	
+	}
+	
+/* Desktop */
+@media screen and (min-width: 500px) {
+
+#eight-ball {
+    width:500px;
+    margin: 0 auto;
+    text-align: center;
+    }
+
 	}

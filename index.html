@@ -3,7 +3,9 @@
 <head>
 		<meta charset="UTF-8">
 		<title>Ghetto Magic 8 Ball</title>
-		 <link href="style.css" type="text/css" rel="stylesheet" />
+		<link href="style.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="js/shake.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	</head>
 	<body>
 		
@@ -17,6 +19,13 @@
 	</body>	
 	
 	<script>
+	window.onload = function() {
+		window.addEventListener('shake', shakeEventDidOccur, false);
+		
+		function shakeEventDidOccur () {
+				shake();
+		}
+			
 		var fortuneTeller = {
 			promptText: "Ask me something.",
 			answerType: "text",
@@ -54,6 +63,8 @@
 			// update the element with our answer
 			fortuneText.innerHTML = randomAnswer;
 		}
+		
+		};
 	</script>
 
 </html>
